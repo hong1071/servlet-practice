@@ -6,13 +6,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-	<script>
-	
-		alert(<%=no%>);
-	
-	</script>
-
 <title>방명록</title>
 </head>
 <body>
