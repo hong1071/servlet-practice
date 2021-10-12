@@ -9,4 +9,15 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+    
+  <servlet>
+		<servlet-name>guestbookController</servlet-name>
+		<servlet-class>guestbook.controller.guestbookController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>guestbookController</servlet-name>
+  		<url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>

@@ -4,9 +4,7 @@
 <%@page import="guestbook.vo.guestbookVo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	guestbookDao dao = new guestbookDao();
-	List<guestbookVo> list = dao.findAll();
-
+	List<guestbookVo> list = (List<guestbookVo>)request.getAttribute("list");
 %>
 <html>
 <head>
@@ -14,7 +12,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="add.jsp" method="post">
+	<form action="/guestbook02/main?a=form" method="post">
 	<table border=1 width=500>
 		<tr>
 			<td>이름</td><td><input type="text" name="name"></td>
@@ -39,7 +37,7 @@
 			<td>[<%=i %>]</td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
-			<td><a href="deleteform.jsp?no=<%=vo.getNo()%>">삭제</a></td>
+			<td><a href="/guestbook02/main?a=del&no=<%=vo.getNo()%>">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><%=vo.getMessage() %></td>

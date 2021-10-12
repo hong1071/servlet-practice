@@ -18,7 +18,7 @@
 	    <version>2.7.2</version>
 	</dependency>
   </dependencies>
-	
+
 	<build>
 		<finalName>guestbook02</finalName>
 		<sourceDirectory>src/main/java</sourceDirectory>
