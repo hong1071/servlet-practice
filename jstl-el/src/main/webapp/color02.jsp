@@ -14,7 +14,7 @@
 		<c:when test='${param.c == "red" }'>
 			<h1 style="color:red">Hello World</h1><br/>
 		</c:when>
-		<c:when test='${param.c == "green" }${param.c == "red" }'>
+		<c:when test='${param.c == "green" }'>
 			<h1 style="color:green">Hello World</h1><br/>
 		</c:when>
 		<c:when test='${param.c == "reblued" }'>
